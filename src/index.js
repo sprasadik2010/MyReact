@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import StyledH1 from './styledh1';
+import StyledButton from './styledButton';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+    <StyledH1 />  
+    <StyledButton />  
   </React.StrictMode>,
   document.getElementById('root')
 );
