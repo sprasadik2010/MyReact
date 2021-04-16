@@ -8,9 +8,13 @@ const SButton = styled.button`
   color: palevioletred;
 `;
 
-function StyledButton() {
+function StyledButton(msg) {
     return (
-    <SButton>Click Me!</SButton>
+    <SButton 
+    onClick={() => alert(JSON.stringify(msg))}
+    >
+      Click Me!
+      </SButton>
     );
 }
 export default StyledButton;
