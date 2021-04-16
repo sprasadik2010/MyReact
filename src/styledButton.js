@@ -11,7 +11,7 @@ const SButton = styled.button`
 function StyledButton(msg) {
     return (
     <SButton 
-    onClick={() => alert(JSON.stringify(msg))}
+    onClick={() => {alert(JSON.stringify(msg)); alert(msg.msg);}}
     >
       Click Me!
       </SButton>
